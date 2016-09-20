@@ -15,14 +15,15 @@ html {
 #totalbody {
 	background-color: white;
 	padding: 0px 20px;
-	height: 3625px;
+	max-height: 4050px;
+	overflow: hidden;
 }
 
-#totalbody2 {
+/*#totalbody2 {
 	background-color: white;
 	padding: 0px 20px;
 	height: 650px;
-}
+}*/
 
  ul {
     list-style: none;
@@ -89,8 +90,7 @@ h1 {
 	font-family: Lucida, Georgia, serif;
 	font-weight: 500;
 	letter-spacing: -2px;
-/*	line-height: 30px;
-*/	margin: 50px 0px 40px 0px;
+	margin: 50px 0px 40px 0px;
 }
 
 .resumesubhed {
@@ -104,27 +104,26 @@ h1 {
 }
 
 #home {
-/*	width: 800px;
-*/	height: 600px;
-	padding: 60px 0px;
+	height: 600px;
+	padding: 60px 0px 30px;
 }
 
 #about {
-/*	width: 800px;
-*/	height: 250px;
-	padding: 60px 0px;
+	height: 250px;
+	padding: 60px 0px 30px;
 }
 
 #work {
-/*	width: 800px;
-*/	height: 900px;
-	padding: 60px 0px;
+	padding: 60px 0px 30px;
+	max-height: 1500px;
+	overflow: hidden;
 }
 
+
+
 #resume {
-/*	width: 800px;
-*/	height: 1200px;
-	padding: 60px 0px;
+	height: 1200px;
+	padding: 60px 0px 30px;
 }
 
 .resumediv {
@@ -150,10 +149,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-.project {
+/*.project {
 	line-height: 10px;
 	color: #696969;
-}
+}*/
 
 /*.thumbnail {
 	border: 1px solid #021A40;
@@ -241,7 +240,7 @@ li span {
 }
 
 
-#twitterlogo {
+/*#twitterlogo {
 	width: 20px;
 	padding: 0px;
 }
@@ -265,9 +264,9 @@ li span {
 	border-style: solid;
 	border-width: thin;
 	border-color: #e7e6e6;
-}
+}*/
 
-.workcopy {
+/*.workcopy {
 	font-size: 12px;
 }
 
@@ -285,9 +284,9 @@ li span {
 
 #leftpic {
 	padding: 0px;
-}
+}*/
 
-#home2 {
+/*#home2 {
 	height: 20px;
 	padding: 60px 0px;
 }
@@ -295,4 +294,54 @@ li span {
 #work2 {
 	height: 400px;
 /*	padding: 60px 0px;
-*/}
+}*/
+
+
+button.accordion {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: Lucida, Georgia, serif;
+	font-weight: 500;
+
+}
+
+
+button.accordion.active, button.accordion:hover {
+    background-color: #e7e6e6;
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+div.panel.show {
+    display: block !important;
+    opacity: 1;
+    max-height: 800px;
+}
+
+button.accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; 
+}
