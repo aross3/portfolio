@@ -15,7 +15,7 @@ html {
 #totalbody {
 	background-color: white;
 	padding: 0px 20px;
-	max-height: 4050px;
+	max-height: 6150px;
 	overflow: hidden;
 }
 
@@ -108,6 +108,11 @@ h1 {
 	padding: 60px 0px 30px;
 }
 
+#home2 {
+	height:80px;
+	padding: 60px 0px 30px;
+}
+
 #about {
 	height: 250px;
 	padding: 60px 0px 30px;
@@ -190,7 +195,7 @@ a:hover {
 .experience {
 	line-height: 5px;
 	float: left;
-	margin: -10px 40px 70px 0px;
+	margin: -10px 68px 70px 0px;
 }
 
 .experience2 {
@@ -203,6 +208,12 @@ a:hover {
 	line-height: 5px;
 	float: left;
 	margin: -5px 40px -10px 0px;
+}
+
+.experience4 {
+	line-height: 5px;
+	float: left;
+	margin: -10px 40px 70px 0px;
 }
 
 .bullets {
